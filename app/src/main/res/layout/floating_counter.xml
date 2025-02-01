@@ -7,6 +7,7 @@
     android:gravity="center"
     android:padding="8dp">
 
+    <!-- Кнопка для збільшення лічильника -->
     <Button
         android:id="@+id/btn_plus"
         android:layout_width="60dp"
@@ -16,6 +17,7 @@
         android:textSize="24sp"
         android:layout_marginBottom="8dp"/>
 
+    <!-- Текст для відображення лічильника -->
     <TextView
         android:id="@+id/tv_count"
         android:layout_width="60dp"
@@ -27,6 +29,7 @@
         android:gravity="center"
         android:layout_marginBottom="8dp"/>
 
+    <!-- Кнопка для зменшення лічильника -->
     <Button
         android:id="@+id/btn_minus"
         android:layout_width="60dp"
@@ -34,4 +37,33 @@
         android:background="@drawable/circle_bg"
         android:text="-"
         android:textSize="24sp"/>
+
+    <!-- Пасхалка для 1000 кліків -->
+    <RelativeLayout
+        android:id="@+id/congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp">
+
+        <!-- Картинка для пасхалки -->
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/oiauia" />
+
+        <!-- Текст для пасхалки -->
+        <TextView
+            android:id="@+id/animationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations!"
+            android:textColor="#ff6347"
+            android:textSize="17sp"
+            android:layout_below="@id/catImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
 </LinearLayout>
